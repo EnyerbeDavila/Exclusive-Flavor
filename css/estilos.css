@@ -4,7 +4,7 @@ html{
     font-weight: 500;
 }
 body {
-    background-color: #EFD2CB;
+    background-color: #faeedb;
     display: grid;
     grid-template-areas: 
     "header"
@@ -21,115 +21,72 @@ main {
 footer {
     grid-area: footer;
 }
-.header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.header-nav a {
-    border: ridge 6px #E9FFF9;
-}
-.header-nav ul li {
-    display: inline-block;
-    transition: all 1s;
-}
-.header-nav ul li a{
-    padding: 0 5px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: black;
-    font-family: cursive;
-    background-color: #eec68a;
-    border: ridge 5px #E9FFF9;
-
-}
-.header-nav ul li:hover {
-    transform: scale(1.3);
-}
 h1 {
-    text-align:center;
-    color: rgb(156, 36, 20);
+    color: #bca150;
+    font-family: "Merriweather";
+    margin: 8px;
 }
-.cuerpo-1 p {
-    font-size: 17px;
-    margin: 0px 10px;
-}
-.cuerpo-1 div {
-    text-align: center;
+.main-index div p {
     margin: 5px 10px;
 }
-.cuerpo-2 section {
+.color-crema {
+    background-color: #fdf7ee;
+}
+.margin-top {
+    margin-top: 30px;
+}
+.main-origen div section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.cuerpo-2 section p {
+.main-origen div section p {
     font-size: 17px;
     margin: 8px;
 }
-.cuerpo-2 section img{
+.main-origen div section img{
     margin: 5px
 }
-.cuerpo-3 {
-    font-size: 17px;
-    margin: 5px;
-}
-.cuerpo-4 article {
-    text-align: center;
-    margin-right: 10px;
-}
-.cuerpo-5 article p {
-    font-size: 17px;
-    margin: 5px;
-}
-.cuerpo-5 section {
-    background-image: url(../imagenes/vinedo2.jpg);
-    background-size: cover;
-    color: rgb(0, 0, 0);
-    border: ridge 5px #C34A2E;
-    margin: 5px;
-    padding: 10px;
-    padding-top: 0;
-    font-size: 20px;
-}
-
-@media screen and (max-width:600px) {
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-nav ul {
-    padding: 0;
-    text-align: center;
-}
-nav ul li {
-    display: block;
+.main-elaboracion div section {
     margin: 8px;
 }
-.cuerpo-1 div img {
-    width: 320px;
-    height: 200px;
+.main-crianza div section {
+    margin: 10px;
 }
-.cuerpo-2 section img {
-    width: 320px;
-    height: 380PX;
+.main-acercade div article {
+    margin: 10px;
 }
-.cuerpo-3 {
-    font-size: 16px;
+.main-acercade div section {
+    margin: 10px;
+}
+footer section {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+}
+footer p {
+    display:flex ;
+    justify-content: flex-end;
+}
+@media screen and (min-width:700px) {
+.main-crianza div section iframe {
+    width: 600px;
+    height: 300px;
 }
 }
-@media screen and (max-width:768px) {
-.cuerpo-2 section {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width:1050px) {
+.main-index div section img {
+    width: 35% !important;
 }
-h1 {
-    font-size: 28px;
+.main-origen div section {
+    flex-direction: row;
 }
-.cuerpo-4 article iframe {
-    width: 320px;
-    height: 160px;
+.main-origen div section img {
+    width: 30% !important;
+}
+.main-crianza div section iframe {
+    width: 900px;
+    height: 450px;
 }
 }
