@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 html{
     font-size: 16px;
     font-family: serif;
@@ -26,48 +28,8 @@ h1 {
     font-family: "Merriweather";
     margin: 8px;
 }
-.main-index div p {
-    margin: 5px 10px;
-}
 .color-crema {
     background-color: #fdf7ee;
-}
-.margin-top {
-    margin-top: 30px;
-}
-.main-origen div section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main-origen div section p {
-    font-size: 17px;
-    margin: 8px;
-}
-.main-origen div section img{
-    margin: 5px
-}
-.main-elaboracion div section {
-    margin: 8px;
-}
-.main-crianza div section {
-    margin: 10px;
-}
-.main-acercade div article {
-    margin: 10px;
-}
-.main-acercade div section {
-    margin: 10px;
-}
-footer section {
-    display:flex ;
-    flex-direction: row;
-    justify-content: center;
-}
-footer p {
-    display:flex ;
-    justify-content: flex-end;
 }
 @media screen and (min-width:700px) {
 .main-crianza div section iframe {
@@ -79,9 +41,6 @@ footer p {
 .main-index div section img {
     width: 35% !important;
 }
-.main-origen div section {
-    flex-direction: row;
-}
 .main-origen div section img {
     width: 30% !important;
 }
@@ -89,4 +48,18 @@ footer p {
     width: 900px;
     height: 450px;
 }
+}
+footer h3 {
+    color: #bca150;
+    font-family: "Merriweather";
+    animation-name: resaltar;
+    animation-iteration-count: 5;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+@keyframes resaltar {
+    25% {color: rgb(255, 147, 47);}
+    50% { color: rgb(133, 24, 24);}
+    75% { color: rgb(187, 108, 56); }
+    100% {transform: rotate(360deg) scale(1.2);}
 }
