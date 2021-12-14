@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+html {
+  font-size: 16px;
+  font-family: serif;
+  font-weight: 500; }
+
+body {
+  background-color: #faeedb;
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer;
+  background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%); }
+  footer div h3 {
+    color: #bca150;
+    font-family: "Merriweather";
+    animation-name: resaltar;
+    animation-iteration-count: 5;
+    animation-duration: 2s;
+    animation-delay: 10s; }
+
+h1 {
+  color: #bca150;
+  font-family: "Merriweather"; }
+
+.color-crema {
+  background-color: #fdf7ee; }
+
+@keyframes resaltar {
+  25% {
+    color: #ff932f; }
+  50% {
+    color: #851818; }
+  75% {
+    color: #bb6c38; }
+  100% {
+    transform: rotate(360deg) scale(1.2); } }
+
+@media screen and (min-width: 700px) {
+  .main-crianza div section iframe {
+    width: 600px;
+    height: 300px; } }
+
+@media screen and (min-width: 1050px) {
+  .main-index div section img {
+    width: 35% !important; }
+  .main-origen div section img {
+    width: 30% !important; }
+  .main-crianza div section iframe {
+    width: 900px;
+    height: 450px; } }
