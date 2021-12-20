@@ -1,20 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+/*estilo de letra general*/
 html {
   font-size: 16px;
   font-family: serif;
   font-weight: 500; }
 
+/*grid*/
 body {
   background-color: #faeedb;
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
-header {
-  grid-area: header; }
-
 main {
   grid-area: main; }
 
+/*header*/
+header {
+  grid-area: header; }
+  header nav div div ul li a:hover {
+    background-color: #f8c057a8; }
+
+/*footer*/
 footer {
   grid-area: footer;
   background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%); }
@@ -26,6 +32,7 @@ footer {
     animation-duration: 2s;
     animation-delay: 10s; }
 
+/*etilos caracteristicos*/
 h1 {
   color: #bca150;
   font-family: "Merriweather"; }
@@ -33,6 +40,7 @@ h1 {
 .color-crema {
   background-color: #fdf7ee; }
 
+/*animaciones y media queries*/
 @keyframes resaltar {
   25% {
     color: #ff932f; }
@@ -44,15 +52,15 @@ h1 {
     transform: rotate(360deg) scale(1.2); } }
 
 @media screen and (min-width: 700px) {
-  .main-crianza div section iframe {
+  .main-crianza section div iframe {
     width: 600px;
     height: 300px; } }
 
-@media screen and (min-width: 1050px) {
-  .main-index div section img {
+@media screen and (min-width: 1000px) {
+  .main-index section div img {
     width: 35% !important; }
-  .main-origen div section img {
-    width: 30% !important; }
-  .main-crianza div section iframe {
+  .main-origen section div section {
+    flex-direction: row !important; }
+  .main-crianza section div iframe {
     width: 900px;
     height: 450px; } }

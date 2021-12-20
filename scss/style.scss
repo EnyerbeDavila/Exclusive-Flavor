@@ -3,11 +3,14 @@
 $dorado: #bca150 ;
 $letratitular: "Merriweather" ;
 
+/*estilo de letra general*/
 html{
     font-size: 16px;
     font-family: serif;
     font-weight: 500;
 }
+
+/*grid*/
 body {
     background-color: #faeedb;
     display: grid;
@@ -17,24 +20,45 @@ body {
     "footer"
     ;
 }
-header {
-    grid-area: header;
-}
 main {
     grid-area: main;
 }
+/*header*/
+header {
+    grid-area: header;
+    nav{
+        div{
+            div{
+                ul{
+                    li{
+                        a{
+                            &:hover {
+                                background-color: #f8c057a8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*footer*/
 footer {
     grid-area: footer;
     background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%);
-    div h3 {
-    color: $dorado ;
-    font-family: $letratitular ;
-    animation-name: resaltar;
-    animation-iteration-count: 5;
-    animation-duration: 2s;
-    animation-delay: 10s;
+    div {
+        h3 {
+        color: $dorado ;
+        font-family: $letratitular ;
+        animation-name: resaltar;
+        animation-iteration-count: 5;
+        animation-duration: 2s;
+        animation-delay: 10s;
+        }
     }
 }
+/*etilos caracteristicos*/
 h1 {
     color: $dorado ;
     font-family: $letratitular ;
@@ -42,6 +66,7 @@ h1 {
 .color-crema {
     background-color: #fdf7ee;
 }
+/*animaciones y media queries*/
 @keyframes resaltar {
     25% {color: rgb(255, 147, 47);}
     50% { color: rgb(133, 24, 24);}
@@ -49,19 +74,19 @@ h1 {
     100% {transform: rotate(360deg) scale(1.2);}
 }
 @media screen and (min-width:700px) {
-.main-crianza div section iframe {
+.main-crianza section div iframe {
     width: 600px;
     height: 300px;
 }
 }
-@media screen and (min-width:1050px) {
-.main-index div section img {
+@media screen and (min-width:1000px) {
+.main-index section div img {
     width: 35% !important;
 }
-.main-origen div section img {
-    width: 30% !important;
+.main-origen section div section {
+    flex-direction: row !important;
 }
-.main-crianza div section iframe {
+.main-crianza section div iframe {
     width: 900px;
     height: 450px;
 }
