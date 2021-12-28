@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-$dorado: #bca150 ;
-$letratitular: "Merriweather" ;
+$encabezados: (
+color: #bca150,
+estilo-letra: "Merriweather",
+);
+@mixin area($width, $height) {
+    width: $width;
+    height: $height;
+}
 
 /*estilo de letra general*/
 html{
@@ -11,6 +17,9 @@ html{
 }
 
 /*grid*/
+header {
+    grid-area: header;
+}
 body {
     background-color: #faeedb;
     display: grid;
@@ -23,71 +32,72 @@ body {
 main {
     grid-area: main;
 }
-/*header*/
-header {
-    grid-area: header;
-    nav{
-        div{
-            div{
-                ul{
-                    li{
-                        a{
-                            &:hover {
-                                background-color: #f8c057a8;
-                            }
-                        }
-                    }
-                }
-            }
+
+/*etilos caracteristicos*/
+h1 {
+    color: map-get($encabezados, color);
+    font-family: map-get($encabezados, estilo-letra);
+}
+.color-crema {
+    background-color: #fdf7ee;
+}
+.main-index section {
+    h2 {
+        @extend h1 ;
+        text-align: center;
+    }
+    section {
+        section {
+            background-color: #f5dd97;
         }
     }
 }
-
+.resaltado{
+    color: map-get($encabezados, color);
+    font-size: 20px;
+}
 /*footer*/
 footer {
     grid-area: footer;
     background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%);
     div {
         h3 {
-        color: $dorado ;
-        font-family: $letratitular ;
-        animation-name: resaltar;
-        animation-iteration-count: 5;
-        animation-duration: 2s;
-        animation-delay: 10s;
+            @extend h1 ;
         }
     }
 }
-/*etilos caracteristicos*/
-h1 {
-    color: $dorado ;
-    font-family: $letratitular ;
-}
-.color-crema {
-    background-color: #fdf7ee;
-}
-/*animaciones y media queries*/
-@keyframes resaltar {
-    25% {color: rgb(255, 147, 47);}
-    50% { color: rgb(133, 24, 24);}
-    75% { color: rgb(187, 108, 56); }
-    100% {transform: rotate(360deg) scale(1.2);}
-}
+/*media queries*/
 @media screen and (min-width:700px) {
+    
 .main-crianza section div iframe {
-    width: 600px;
-    height: 300px;
+    @include area(600px, 300px);
 }
+.main-index section {
+    div{
+        img{
+            width: 400px;
+        }
+    }
+    section {
+    flex-direction: row !important;
+    }
+}
+.main-acercade section div img {
+    @include area(400px, 200px);
+}
+
 }
 @media screen and (min-width:1000px) {
-.main-index section div img {
-    width: 35% !important;
-}
 .main-origen section div section {
     flex-direction: row !important;
 }
 .main-crianza section div iframe {
-    width: 900px;
-    height: 450px;
+    @include area(900px, 450px);
+}
+.main-acercade section div {
+    flex-direction: row !important;
+    img {
+    @include area(700px, 350px);
+}
 }
 }

@@ -6,6 +6,9 @@ html {
   font-weight: 500; }
 
 /*grid*/
+header {
+  grid-area: header; }
+
 body {
   background-color: #faeedb;
   display: grid;
@@ -14,53 +17,50 @@ body {
 main {
   grid-area: main; }
 
-/*header*/
-header {
-  grid-area: header; }
-  header nav div div ul li a:hover {
-    background-color: #f8c057a8; }
-
-/*footer*/
-footer {
-  grid-area: footer;
-  background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%); }
-  footer div h3 {
-    color: #bca150;
-    font-family: "Merriweather";
-    animation-name: resaltar;
-    animation-iteration-count: 5;
-    animation-duration: 2s;
-    animation-delay: 10s; }
-
 /*etilos caracteristicos*/
-h1 {
+h1, .main-index section h2, footer div h3 {
   color: #bca150;
   font-family: "Merriweather"; }
 
 .color-crema {
   background-color: #fdf7ee; }
 
-/*animaciones y media queries*/
-@keyframes resaltar {
-  25% {
-    color: #ff932f; }
-  50% {
-    color: #851818; }
-  75% {
-    color: #bb6c38; }
-  100% {
-    transform: rotate(360deg) scale(1.2); } }
+.main-index section h2 {
+  text-align: center; }
 
+.main-index section section section {
+  background-color: #f5dd97; }
+
+.resaltado {
+  color: #bca150;
+  font-size: 20px; }
+
+/*footer*/
+footer {
+  grid-area: footer;
+  background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%); }
+
+/*media queries*/
 @media screen and (min-width: 700px) {
   .main-crianza section div iframe {
     width: 600px;
-    height: 300px; } }
+    height: 300px; }
+  .main-index section div img {
+    width: 400px; }
+  .main-index section section {
+    flex-direction: row !important; }
+  .main-acercade section div img {
+    width: 400px;
+    height: 200px; } }
 
 @media screen and (min-width: 1000px) {
-  .main-index section div img {
-    width: 35% !important; }
   .main-origen section div section {
     flex-direction: row !important; }
   .main-crianza section div iframe {
     width: 900px;
-    height: 450px; } }
+    height: 450px; }
+  .main-acercade section div {
+    flex-direction: row !important; }
+    .main-acercade section div img {
+      width: 700px;
+      height: 350px; } }
