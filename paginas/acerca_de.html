@@ -16,8 +16,11 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-warning">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img width="50" src="../imagenes/logo.png" class="rounded-circle"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand d-flex flex-column align-items-center" href="../index.html">
+                    <img width="100" src="../imagenes/logo.png" alt="logo">
+                    <p class="titulo-nav">Exclusive Flavor</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
@@ -46,11 +49,27 @@
         <section class="border color-crema rounded" style="width: 90%;">
             <h1 class="fs-2 text-center m-2">Sobre Nosotros</h1>
             <div class="d-flex align-items-center flex-column">
-                <img src="../imagenes/viñedo-2.png" alt="" width="280" height="140" class="rounded m-2">
-                <p class="fs-6 m-2"> <strong class="resaltado">La pasión por el Vino nos mueve.</strong> Nuestra empresa se dedica al mundo del vino y destilados fruto de la pasión por el vino de uno de nuestros fundadores, que ha hecho de su pasión, la pasión de todos nosotros. Desde su inicio, Exclusive flavor ha marcado claramente su misión, acercar el vino y sus noticias a los amantes del mismo en todo el mundo.<br> <br> correo electronico: Exclusive-flavor@gmail.com <br> numero telefonico: 3(7108)613-32-97 <br> direccion: Stradone Antonio Provolo, 1605100-Gabelletta Di Cesi TR </p>
+                <img src="../imagenes/viñedo-2.png" alt="img-nuestro-viñedo" width="280" height="140" class="rounded m-2">
+                <div>
+                    <p class="fs-6 m-2"> <strong class="resaltado">La pasión por el Vino nos mueve.</strong> Nuestra empresa se dedica al mundo del vino y destilados fruto de la pasión por el vino de uno de nuestros fundadores, que ha hecho de su pasión, la pasión de todos nosotros. Desde su inicio, Exclusive flavor ha marcado claramente su misión, acercar el vino y sus noticias a los amantes del mismo en todo el mundo.</p>
+                    <div class="d-flex align-items-center m-2">
+                        <img src="../imagenes/icon-gmail.png" alt="icono-gmail" class="icon-img">
+                        <p class="my-1">: Exclusive-flavor@gmail.com</p>
+                    </div>
+                    <div class="d-flex align-items-center m-2">
+                        <img src="../imagenes/icon-phone.png" alt="icono-phone" class="icon-img">
+                        <p class="my-1">: 3(7108)613-32-97</p>
+                    </div>
+                </div>
             </div>
-            <section class="m-2">
-                <h2 class="fs-3">Contactanos</h2>
+            <div class="d-flex justify-content-center">
+                <div class="map-iframe border rounded mx-2">
+                    <p class="titulo-nav fs-3 mx-2">Encuentranos en:</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3907.0121174655037!2d-54.62756845948107!3d-34.56893426170686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9e8c1b201d072437!2sBodega%20Garz%C3%B3n!5e0!3m2!1ses!2sve!4v1640847933172!5m2!1ses!2sve" width="250" height="140" style="border:0;" allowfullscreen="" loading="lazy" class="mx-3 mb-3 rounded"></iframe>
+                </div>
+            </div>
+            <div class="m-2">
+                <h2 class="fs-3 titulo-nav text-center mt-3">Contactanos</h2>
                 <form>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Tu Email:</label>
@@ -64,18 +83,18 @@
                         <input type="submit" value="Enviar">
                     </div>
                 </form>
-            </section>
+            </div>
         </section>
     </main>
     <footer class="border border-5 border-warning">
         <div class="d-flex justify-content-center">
             <h3>Siguenos</h3>
         </div>
-        <section class="d-flex flex-row justify-content-center">
-            <a href=""><img src="../imagenes/ico-facebook.png" alt=""></a>
-            <a href=""><img src="../imagenes/ico-instagram.png" alt=""></a>
-            <a href=""><img src="../imagenes/ico-youtube.png" alt=""></a>
-        </section>
+        <div class="d-flex flex-row justify-content-center">
+            <a href=""><img src="../imagenes/ico-facebook.png" alt="icono-facebook"></a>
+            <a href=""><img src="../imagenes/ico-instagram.png" alt="icono-instagram"></a>
+            <a href=""><img src="../imagenes/ico-youtube.png" alt="icono-youtube"></a>
+        </div>
         <p class="d-flex justify-content-center fst-italic">Sitio wed desarrollado por Enyerbe Davila</p>
     </footer>
 

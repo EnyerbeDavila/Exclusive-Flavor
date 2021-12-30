@@ -1,0 +1,8 @@
+$encabezados: (
+color: #bca150,
+estilo-letra: "Merriweather",
+);
+@mixin area($width, $height) {
+    width: $width;
+    height: $height;
+}

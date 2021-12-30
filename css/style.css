@@ -6,55 +6,83 @@ html {
   font-weight: 500; }
 
 /*grid*/
-header {
-  grid-area: header; }
-
 body {
   background-color: #faeedb;
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
+header {
+  grid-area: header; }
+
 main {
   grid-area: main; }
 
 /*etilos caracteristicos*/
-h1, .main-index section h2, footer div h3 {
+h1, .second-part-index h2, footer div h3 {
   color: #bca150;
   font-family: "Merriweather"; }
 
 .color-crema {
   background-color: #fdf7ee; }
 
-.main-index section h2 {
-  text-align: center; }
-
-.main-index section section section {
-  background-color: #f5dd97; }
-
 .resaltado {
   color: #bca150;
   font-size: 20px; }
+
+.titulo-nav {
+  font-family: "Merriweather";
+  color: #806927; }
+
+.map-iframe {
+  background-color: #f5dd97; }
+
+.icon-img {
+  width: 30px !important;
+  height: 30px !important; }
+
+.second-part-index h2 {
+  text-align: center; }
+
+.second-part-index div div {
+  background-color: #f5dd97; }
 
 /*footer*/
 footer {
   grid-area: footer;
   background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%); }
+  footer div a img:hover {
+    transform: scale(1.2); }
 
 /*media queries*/
 @media screen and (min-width: 700px) {
+  .map-iframe iframe {
+    width: 600px;
+    height: 450px; }
   .main-crianza section div iframe {
     width: 600px;
     height: 300px; }
-  .main-index section div img {
+  .main-index section div div img {
     width: 400px; }
-  .main-index section section {
-    flex-direction: row !important; }
   .main-acercade section div img {
     width: 400px;
     height: 200px; } }
 
 @media screen and (min-width: 1000px) {
-  .main-origen section div section {
+  header nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    header nav div a {
+      margin-bottom: 10px; }
+      header nav div a img {
+        width: 150px;
+        height: 150px; }
+    header nav div div ul li {
+      margin-left: 5px;
+      margin-right: 5px; }
+  .second-part-index div {
+    flex-direction: row !important; }
+  .ruptura-p {
     flex-direction: row !important; }
   .main-crianza section div iframe {
     width: 900px;
