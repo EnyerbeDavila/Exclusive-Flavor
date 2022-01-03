@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/*estilo de letra general*/
+html{
+    font-size: 16px;
+    font-family: serif;
+    font-weight: 500;
+}
+/*grid*/
+body {
+    background-color: #faeedb;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+// header-nav
+header {
+    grid-area: header;
+}
+.titulo-nav {
+    font-family: "Merriweather";
+    color:$color-Brown;
+}
+
+// main
+main {
+    grid-area: main;
+    h1 {
+        @include encabezados;
+    }
+}
+.color-crema {
+    background-color: #fdf7ee;
+}
+.second-part-index {
+    h2 {
+        @include encabezados;
+        text-align: center;
+    }
+    .flex-cards-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div {
+        div {
+            background-color: $fondo-cards;
+            &:hover{
+                transform: scale(1.01);
+            }
+            div{
+                .title-cards{
+                    @extend .titulo-nav;
+                    font-weight: 700;
+                }
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+.main-acercade {
+    div {
+        div {
+            h2{
+                @include encabezados;
+            }
+        }
+    }
+}
+.color-crema {
+    background-color: #fdf7ee;
+}
+.resaltado{
+    @include encabezados;
+    font-size: 20px;
+}
+.form-acerca-d {
+    background-color: $fondo-cards;
+}
+.icon-img {
+    width: 30px !important;
+    height: 30px !important;
+}
+.contenedor-links-acerca-d {
+    max-width: 300px;
+}
+.links-acerca-d {
+    text-decoration: none;
+    color: $color-Brown;
+    width: 250px;
+    &:hover {
+        color: #d1a325;
+        transform: scale(1.01);
+    }
+}
+/*footer*/
+footer {
+    grid-area: footer;
+    background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%);
+    div {
+        h3 {
+            @include encabezados;
+        }
+    }
+    div {
+        a {
+            img {
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+.footer-1 {
+    display: flex;
+    justify-content: center;
+}
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

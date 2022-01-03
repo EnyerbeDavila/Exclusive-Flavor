@@ -2,15 +2,16 @@
 @media screen and (min-width:700px) {
 .map-iframe {
     iframe {
-        width: 600px;
-        height: 450px;
+        width: map-get($area , 5);
+        height: map-get($area , 4);
     }
 }
 .main-crianza {
     section {
         div {
             iframe {
-                @include area(600px, 300px);
+                width: map-get($area , 6);
+                height: map-get($area , 3);
             }
         }
     }
@@ -20,7 +21,7 @@
         div{
             div {
                 img{
-                    width: 400px;
+                    width: map-get($area , 4);
                 }
             }
         }
@@ -30,7 +31,18 @@
     section {
         div {
             img {
-                @include area(400px, 200px);
+                width: map-get($area , 4);
+                height: map-get($area , 2);
+            }
+        }
+    }
+}
+.main-origen {
+    section {
+        div {
+            img {
+                width: map-get($area , 4.5);
+                height: map-get($area , 3.5);
             }
         }
     }
@@ -46,7 +58,8 @@ header {
             a {
                 margin-bottom: 10px;
                 img {
-                    @include area (150px,150px);
+                    width: map-get($area , 1.5);
+                    height: map-get($area , 1.5);
                 }
             }
             div {
@@ -60,6 +73,9 @@ header {
         }
     }
 }
+.form-acerca-d {
+    flex-direction: row;
+}
 .second-part-index {
     div {
         flex-direction: row !important;
@@ -68,11 +84,22 @@ header {
 .ruptura-p {
     flex-direction: row !important;
 }
+.main-origen {
+    section {
+        div {
+            img {
+                width: map-get($area , 6);
+                height: map-get($area , 4);
+            }
+        }
+    }
+}
 .main-crianza {
     section {
         div {
             iframe {
-                @include area(900px, 450px);
+                width: map-get($area, 9);
+                height: map-get($area , 4.5);
             }
         }
     }
@@ -82,7 +109,8 @@ header {
         div {
             flex-direction: row !important;
             img {
-                @include area(700px, 350px);
+                width: map-get($area , 7);
+                height: map-get($area , 3.5);
             }
         }
     }

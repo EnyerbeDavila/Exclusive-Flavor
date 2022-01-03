@@ -1,8 +1,26 @@
-$encabezados: (
-color: #bca150,
-estilo-letra: "Merriweather",
-);
-@mixin area($width, $height) {
-    width: $width;
-    height: $height;
+$color-Brown: (#806927);
+$fondo-cards: (#fcedc3);
+@mixin encabezados {
+    color: #bca150;
+    font-family: "Merriweather";
 }
+$area: ( 
+    1 : 100px,
+    2 : 200px,
+    3 : 300px,
+    4 : 400px,
+    5 : 500px,
+    6 : 600px,
+    7 : 700px,
+    8 : 800px,
+    9 : 900px,
+    1.5 : 150px,
+    2.5 : 250px,
+    3.5 : 350px,
+    4.5 : 450px,
+    5.5 : 550px,
+    6.5 : 650px,
+    7.5 : 750px,
+    8.5 : 850px,
+    9.5 : 950px,
+);
