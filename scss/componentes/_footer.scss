@@ -1,0 +1,28 @@
+/*footer*/
+footer {
+    grid-area: footer;
+    background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%);
+    div {
+        h3 {
+            @include encabezados;
+        }
+    }
+    div {
+        a {
+            img {
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+.footer-1 {
+    display: flex;
+    justify-content: center;
+}
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

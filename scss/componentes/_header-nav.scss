@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/*estilo de letra general*/
+html{
+    font-size: 16px;
+    font-family: serif;
+    font-weight: 500;
+}
+/*grid*/
+body {
+    background-color: #faeedb;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/*header-nav*/
+header {
+    grid-area: header;
+    nav {
+        .titulo-nav {
+            font-family: "Merriweather";
+            color:$color-Brown;
+        }
+        ul {
+            li {
+                a{
+                    &:hover {
+                    background-color: rgba(168, 24, 24, 0.493);
+                    }
+                }
+            }
+        }
+    }
+}

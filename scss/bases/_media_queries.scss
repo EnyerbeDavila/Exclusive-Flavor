@@ -9,6 +9,10 @@
 .main-crianza {
     section {
         div {
+            img {
+                width: map-get($area , 4.5);
+                height: map-get($area , 3);
+            }
             iframe {
                 width: map-get($area , 6);
                 height: map-get($area , 3);
@@ -97,6 +101,10 @@ header {
 .main-crianza {
     section {
         div {
+            img {
+                width: map-get($area, 8);
+                height: map-get($area, 4);
+            }
             iframe {
                 width: map-get($area, 9);
                 height: map-get($area , 4.5);
