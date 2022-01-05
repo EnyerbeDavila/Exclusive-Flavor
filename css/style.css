@@ -17,8 +17,10 @@ header {
   header nav .titulo-nav {
     font-family: "Merriweather";
     color: #806927; }
-  header nav ul li a:hover {
-    background-color: rgba(168, 24, 24, 0.493); }
+  header nav ul li a {
+    border-radius: 1rem; }
+    header nav ul li a:hover {
+      background-color: rgba(168, 24, 24, 0.493); }
 
 /*main*/
 main {
