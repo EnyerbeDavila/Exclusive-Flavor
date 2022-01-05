@@ -102,20 +102,32 @@ main {
 footer {
   grid-area: footer;
   background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%); }
-  footer div h3 {
-    color: #bca150;
-    font-family: "Merriweather"; }
   footer div a img:hover {
     transform: scale(1.2); }
 
 .footer-1 {
   display: flex;
   justify-content: center; }
+  .footer-1 h3 {
+    color: #bca150;
+    font-family: "Merriweather"; }
+    .footer-1 h3:hover {
+      animation: 3s infinite resaltar; }
 
 .footer-2 {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+
+@keyframes resaltar {
+  25% {
+    color: #ff932f; }
+  50% {
+    color: #854d18; }
+  75% {
+    color: #bb6c38; }
+  100% {
+    transform: rotate(360deg); } }
 
 /*media queries*/
 @media screen and (min-width: 700px) {
