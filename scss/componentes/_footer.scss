@@ -2,12 +2,10 @@
 footer {
     grid-area: footer;
     background-image: radial-gradient(circle at 50% -15.75%, #fce194 0, #fada8a 25%, #f8d280 50%, #f6ca76 75%, #f5c26d 100%);
-    div {
-        a {
-            img {
-                &:hover {
-                    transform: scale(1.2);
-                }
+    &:hover{
+        div {
+            h3 {
+            animation: 3s 2 resaltar;
             }
         }
     }
@@ -17,15 +15,19 @@ footer {
     justify-content: center;
     h3 {
         @include encabezados;
-        &:hover {
-            animation: 3s infinite resaltar;
-        }
     }
 }
 .footer-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    a {
+        img {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
 }
 @keyframes resaltar {
     25% {color: rgb(255, 147, 47);}
